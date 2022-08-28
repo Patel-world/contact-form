@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button {
+    left: 40%;
+    border-radius: 4px;
+    border: #1c74e6;
+    background-color: rgb(28 116 230);
+    width: 5rem;
+    height: 2rem;
+    position: relative;
+}
+        textarea#msg {
+    height: 5rem;
+}
+        input,textarea {
+            padding: 10px;
+    box-shadow: 0.3px 0.3px hsl(0deg 0% 62% / 61%);
+    border: 1px solid hsl(0deg 0% 62% / 61%);
+    height: 1rem;
+}
+        form {
+    gap: 1rem;
+    display: grid;
+}
+    input:focus, textarea:focus{
+        outline: none;
+        border:2px solid rgb(76,120,207);
+    }   
+    
+.main {
+    padding: 1rem 2rem 3rem 2rem;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #fff;
+}
+        form {
+    display: grid;
+}
+body {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    display: grid;
+    height: -webkit-fill-available;
+    padding: 0rem 5rem 1rem 5rem;
+    
+}   
+html{
+    background: rgb(76,120,207);
+    background: linear-gradient(135deg, rgba(76,120,207,1) 0%, rgba(70,160,174,1) 96%);
+}
+@media only screen and (min-width: 600px) {
+    body {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.4fr 1fr;
+    display: grid;
+    height: -webkit-fill-available;
+    padding: 0rem 5rem 1rem 5rem;
+    
+}   
+}
+    </style>
+</head>
+<body>
+    <div></div><div></div><div></div><div></div>
+    <div class="main">
+        <h1>Contact us</h1>
+        <form>
+            <input name="username" type="text" placeholder="Name">
+            <input name="email" type="email" placeholder="Email">
+            <textarea name="message" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+            <button>send</button>
+        </form>
+    </div>
+</body>
+</html>
