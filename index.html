@@ -35,7 +35,8 @@
         border:2px solid rgb(76,120,207);
     }   
     
-.main {
+    .main {
+    max-width: 330px;
     padding: 1rem 2rem 3rem 2rem;
     border-radius: 2px;
     text-align: center;
@@ -45,26 +46,17 @@
     display: grid;
 }
 body {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
-    display: grid;
+   
+    display: flex;
     height: -webkit-fill-available;
     padding: 11rem 0rem 10rem 0rem;
-}  
+    justify-content: center;
+}
 html{
     background: rgb(76,120,207);
     background: linear-gradient(135deg, rgba(76,120,207,1) 0%, rgba(70,160,174,1) 96%);
 }
-@media only screen and (min-width: 600px) {
-    body {
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 0.4fr 1fr;
-    display: grid;
-    height: -webkit-fill-available;
-    padding: 0rem 5rem 1rem 5rem;
-    
-}   
-}
+
     </style>
 </head>
 <body>
